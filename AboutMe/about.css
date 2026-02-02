@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: auto;
+    padding: auto;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    min-height: 100vh;
+}
+
+main a{
+        color: orange;
+        font-weight: bold;
+        font-size: 12pt;
+        text-decoration: underline;
+    }
+
+main .bouton{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 50%;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Highlight the current page link */
+
+main{
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+
+    }
+/* About Page Styles */
+main .presentation{
+    display: flex;
+    flex-direction: column;
+    color: rgb(242, 244, 243);
+    width: 50%;
+    align-items: center;
+    gap: 2;
+    padding: 10px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+strong{
+    color: rgba(233, 236, 236, 0.267);
+}
+
+main .presentation h1{
+    color: rgb(244, 185, 7);
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid rgb(240, 182, 11);
+}   
+
+main .presentation #citation{
+    margin-bottom: 15px;
+    color: rgb(251, 251, 251);
+}
+
+/* Style pour les paragraphes de présentation */
+
+main .presentation-text p{
+    margin-bottom: 15px;
+    
+}
+
+
+/* footer en bas de la page*/
+footer{
+    margin-top: auto;
+    background-color: black;
+    padding: 10px;
+    box-shadow: 0 -4px 30px rgba(0, 0, 0, 0.1);
+}
+
+#lien{
+    position: relative;
+    top: 30px;
+    margin-bottom: 50px;
+}
+
+
+
+#motivation{
+    display: flex;
+    flex-direction: column;
+    color: rgb(242, 244, 243);
+    width: 50%;
+    align-items: center;
+    gap: 2;
+    padding: 10px;
+    border-bottom: 1px solid white;
+    margin: auto;
+    margin-top: 50px;
+}
+
+#motivation h2{
+    color: rgb(244, 185, 7);
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid rgb(231, 180, 10);
+}
+
+#motivation strong{
+    color: rgb(244, 185, 7);
+    padding: auto;  
+}
+
+#motivation .text{
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#motivation .text2{
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+#motivation .text2 strong{
+    color: rgb(244, 185, 7);
+}
+
+
+/* Responsive Design for Smaller Screens */
+@media screen and (max-width: 768px) {
+    main .presentation, #motivation {
+        width: 100%;/* Full width on small screens */
+    }
+}

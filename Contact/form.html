@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../scripts/style.css">
+    <script src="../scripts/script.js" defer></script>
+    <script src="main.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <title>Site Personnel | ANGY(Contactez-moi)</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">AngyDev</div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../AboutMe/about.html">About</a></li>
+            <li><a href="../Contact/form.html">Contact</a></li>
+            <li><a href="#" class="material-symbols-outlined"></a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+    <main>
+        
+        <div class="contact-form">
+            <h2>Contact Me</h2>
+            <form id="contactForm"  method="post" onsubmit="return validateForm()" name="myForm">
+                <table class="form-style">
+                    <tr>
+                        <td>
+                            <label>
+                                Votre Nom 
+                                <span class="required">*</span>
+                            </label>
+                        </td>
+                        <td>
+                            <input type="text" name="name" class="long" placeholder="Entrer votre nom">
+                            <span id="errorname" class="error"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>
+                                Votre Adresse Email 
+                                <span class="required">*</span>
+                            </label>
+                        </td>
+                        <td>
+                            <input type="text" name="email" class="long" placeholder="Entrer votre adresse mail">
+                            <span id="erroremail" class="error"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>
+                                Message 
+                                <span class="required">*</span>
+                            </label>
+                        </td>
+                        <td>
+                            <textarea name="message" class="long field-textarea" placeholder="Entrer votre message ici"></textarea>
+                            <span id="errormessage" class="error"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="submit" value="Envoyer">
+                            <input type="reset" value="Réinitialiser">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <span id="error" class="error"></span>
+        <div class="bouton" style=" width: 50%;">
+            <a href="../AboutMe/about.html">< Retour</a>
+        </div>
+    </main>
+    <footer>
+        <p style="text-align: center; padding: 10px; color: white;">
+            &copy; 2025 NewDev. All rights reserved.
+        </p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,205 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+main{
+    padding: 10px;
+    margin: 60px auto;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.contact-form {
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 40%;
+
+}
+
+#contactForm{
+    /* display:flex;
+    flex-direction: column;
+    align-items: center; */
+    gap:15px;
+    /* floutté */
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.5);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 10px;
+    border-radius: 8px;
+    width: 100%;
+    margin: 10px auto;
+}
+
+.contact-form h2 {
+    margin-bottom: 15px;
+    color: rgb(238, 174, 11);
+    text-align: center;
+    border-bottom: 2px solid rgb(242, 160, 19);
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    border-radius: 8px;
+    margin: 10px auto;
+}
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: rgb(255, 255, 255);
+    font-size: 14pt;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+
+
+
+main .bouton a{
+    color: orange;
+    font-weight: bold;
+    font-size: 12pt;
+    text-decoration: underline;
+}
+
+/* span{
+    background-color: red;
+    display: none;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+} */
+
+
+/* Styles pour les champs d'erreur */
+.error {
+  color: #D8000C;
+  background-color: #FFBABA;
+} 
+
+.form-style{
+    padding: 0;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  
+    list-style: none;
+}
+
+.field-error {
+  animation: shake 0.3s;
+}
+
+
+
+.form-style td{
+    padding: 0;
+    display: block;
+    list-style: none;
+    margin: 10px 0 0 0 ;
+    width: 100%;
+}
+
+
+.form-style label{
+    margin: 0 0 3px 0;
+    padding: 0;
+    display: block;
+    font-weight: bold;
+    width: 100%;
+    color: rgb(239, 247, 247);
+}
+.form-style .required{
+    color: red;
+}
+
+.form-style input[type=submit], .form-style input[type=reset]{
+    background-color: #eec341;
+    padding: 8px 15px 8px 15px;
+    border: none;
+    color: #ffff;
+    width: 200px;
+    border-radius:10px ;
+
+}
+
+.form-style input[type=submit]:hover, .form-style input[type=reset]:hover{
+    background: #f4b806;
+    box-shadow: none;
+    -moz-box-shadow:none;
+}
+
+.form-style .field-textarea{
+    height: 100px;
+}
+
+input[type=text]{
+    height: 30px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    overflow:hidden;
+    padding: 0 0 0 10px;
+}
+
+textarea::placeholder{
+    text-align: center;
+}
+
+.form-style input[type=submit],
+ .form-style input[type=reset],
+ textarea{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border: 1px solid #eae6b0;
+    padding: 7PX;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+ }
+
+ .form-style .long{
+    width: 100%;
+ }
+
+ textarea{
+    border-radius: 10px;
+ }
+
+ .form-style input[type=submit]:focus,
+ .form-style input[type=reset]:focus{
+    box-shadow: 0 10px 10px #f0d860;
+    border: 1px solid #f0d974;
+ }
+
+
+
+
+@media screen and (max-width: 768px) {
+    .contact-form{
+        width: 100%;
+    }
+
+    .form-style input[type=submit], .form-style input[type=reset]{
+        width: 200px;
+        margin-bottom: 10px;
+    }
+
+    
+}

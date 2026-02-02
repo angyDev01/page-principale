@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: #0b0b0b;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    color: rgb(238, 115, 7);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+/* animation au survol des liens */
+.nav-links li a:hover{
+    color: rgb(231, 153, 8);
+    text-shadow: 0 0 10px rgba(255, 165, 0, 0.8);
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+    border-bottom: orange 2px solid;
+}
+
+/* Responsive Design */
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        right: 0;
+        height: 100vh;
+        top: 73px;
+        background-color: #f7c617;
+        box-shadow: 5px 14px 20px rgba(0, 0, 0, 0.2);
+        flex-direction: column;
+        align-items: center;
+        width: 40%;
+        transform: translateX(100%);/* Hide the menu by default */
+        transition: transform 1s ease-in;/* Smooth transition */
+    }
+
+    .nav-links.nav-active {
+        transform: translateX(0%);/* Show the menu when active */
+    }
+
+    .nav-links li a{
+        font-size: 24px;
+    }
+
+    .nav-links li a:hover
+    {
+        color: black;
+        transition: color 1s ease-in;
+        border-bottom: #0b0b0b 2px solid;
+
+    }
+
+    .nav-links li {
+        opacity: 0;/* Hide links by default */
+        margin: 20px 0;
+    }
+
+    .nav-links.nav-active li {/* Show links when menu is active */
+        opacity: 1;
+        transition: opacity 1s ease-in-out 1s;/* Delay for smooth appearance */
+    }
+
+    .burger {
+        display: block;/* Show burger icon on small screens */
+    }
+
+    .burger.toggle .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);/* Animate burger icon to cross */
+    }
+
+    .burger.toggle .line2 {/* Hide middle line */
+        opacity: 0;
+    }
+
+    .burger.toggle .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);/* Animate burger icon to cross */
+    }
+}
+
+main .presentation #citation{
+    color: rgb(242, 244, 243);
+    font-size: 14px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+main .presentation-text p{
+    color: rgb(242, 244, 243);
+    margin-bottom: 15px;
+    
+}
+main .presentation #citation strong{
+    color: rgb(248, 89, 20);
+    font-size: 16px;
+}
+
+/* Styles for the Motivation Section */
+#lien{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#lien a{
+    background-color: darkorange;
+    color: blanchedalmond;
+    display: inline-block;
+    color: aliceblue;
+    margin-left: 50px;
+    padding: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    box-shadow: 10px 10px 66px rgba(155, 187, 216, 0.486);
+    border-radius: 10px;
+    width: 120px;
+    text-align: center;
+}
